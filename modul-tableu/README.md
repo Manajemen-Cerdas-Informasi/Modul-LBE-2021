@@ -1,9 +1,10 @@
 # Modul Tableau LBE MCI 2021
-  - Tentang Tableau
-  - Tableau Workspace 
-  - Tableau Navigation
-  - Praktik Tableau
-# Tentang Tableau
+  - [Tentang Tableau](#tentang-tableau)
+  - [Tableau Workspace](#tableau-workspace)
+  - [Tableau Navigation](#tableau-navigation)
+  - [Praktik Tableau](#praktik-tableau)
+  
+# <a name="tentang-tableau"></a>Tentang Tableau
 Tableau adalah sebuah aplikasi yang dirancang untuk melakukan *Business Intellegent* secara cepat dan melakukan visualisasi data. Aplikasi ini memungkinkan Anda untuk melakukan analisis dari sebuah struktur data dan menghasilkan grafik, dashboard, dan laporan yang sangat interaktif dan indah, hanya dalam hitungan menit. Adapun kelebihan dari tableau yaitu sebagai berikut:
   - Hasil cepat untuk informasi yang bermanfaat.
   - Mudah digunakan untuk semua level skill, karena untuk menggunakannya cukup dengan klik, drag and drop.
@@ -35,7 +36,10 @@ Tableau adalah sebuah aplikasi yang dirancang untuk melakukan *Business Intelleg
     Jenis ini adalah versi gratis yang memungkinkan untuk melihat hasil pengolahan data atau workbooks dari tableau desktop. Namun, tetap saja tidak bisa mengedit *workbooks*
     tersebut dan fiturnya sangat terbatas.
     
-  # Tableau Workspace
+  # <a name="tableau-workspace"></a>Tableau Workspace
+  Berikut tampilan workspace pada tableau:
+  
+  <img src="https://github.com/Manajemen-Cerdas-Informasi/Modul-LBE-2021/blob/main/modul-tableu/img/tableau_workspace.jpg" width=""></img><br>
   
   - Menu Bar
   
@@ -80,6 +84,8 @@ Tableau adalah sebuah aplikasi yang dirancang untuk melakukan *Business Intelleg
    
   Berikut icon dan deskripsi yang terdapat pada data pane:
   
+  <img src="https://github.com/Manajemen-Cerdas-Informasi/Modul-LBE-2021/blob/main/modul-tableu/img/data_pane.png" width=""></img><br>
+  
   Selain itu, juga terdapat *Analytics Pane* yang terdiri dari:
   - Summarize
 
@@ -91,8 +97,10 @@ Tableau adalah sebuah aplikasi yang dirancang untuk melakukan *Business Intelleg
 
     Menu untuk menambahkan custom lines, bands, dan boxplot.
     
-  # Tableau Navigation
-  Navigasi pada tableau meliputi:
+  # <a name="tableau-navigation"></a>Tableau Navigation
+  Navigasi pada tableau terdapat pada pojok kiri bawah yang meliputi:
+  
+  <img src="https://github.com/Manajemen-Cerdas-Informasi/Modul-LBE-2021/blob/main/modul-tableu/img/tableau_navigation.png" width=""></img><br>
   
   - Data Source
     
@@ -110,4 +118,9 @@ Tableau adalah sebuah aplikasi yang dirancang untuk melakukan *Business Intelleg
 
     Icon new story digunakan untuk membuat storyboard baru pada workbook tableau.
     
-  # Praktik Tableau
+  # <a name="praktik-tableau"></a>Praktik Tableau
+  
+  Sumber Referensi:
+  - https://anaktik.com/tableau/
+  - https://www.datacamp.com/community/tutorials/data-visualisation-tableau
+  - https://www.guru99.com/introduction-tableau-workspace-navigation.html
