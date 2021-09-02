@@ -1,9 +1,10 @@
 # Modul Tableau LBE MCI 2021
   - Tentang Tableau
-  - Workspace & Navigation
+  - Tableau Workspace 
+  - Tableau Navigation
   - Praktik Tableau
 # Tentang Tableau
-Tableau adalah sebuah aplikasi yang dirancang untuk melakukan Business Intellegent secara cepat dan melakukan visualisasi data. Aplikasi ini memungkinkan Anda untuk melakukan analisis dari sebuah struktur data dan menghasilkan grafik, dashboard, dan laporan yang sangat interaktif dan indah, hanya dalam hitungan menit. Adapun kelebihan dari tableau yaitu sebagai berikut:
+Tableau adalah sebuah aplikasi yang dirancang untuk melakukan *Business Intellegent* secara cepat dan melakukan visualisasi data. Aplikasi ini memungkinkan Anda untuk melakukan analisis dari sebuah struktur data dan menghasilkan grafik, dashboard, dan laporan yang sangat interaktif dan indah, hanya dalam hitungan menit. Adapun kelebihan dari tableau yaitu sebagai berikut:
   - Hasil cepat untuk informasi yang bermanfaat.
   - Mudah digunakan untuk semua level skill, karena untuk menggunakannya cukup dengan klik, drag and drop.
   - Jalur migrasi yang sangat baik untuk pengguna Excel.
@@ -18,15 +19,15 @@ Tableau adalah sebuah aplikasi yang dirancang untuk melakukan Business Intellege
   - Tableau Public 
     
     Pada tableau public semua data pekerjaan disimpan di dalam cloud dan dapat dilihat atau diakses oleh siapapun. Tidak ada batasan pada jenis ini. Pada jenis ini juga dapat
-    dengan mudah men-download data pekerjaan orang lain. Merupakan versi yang cocok untuk memulai belajar tableau.
+    dengan mudah mendownload data pekerjaan orang lain. Merupakan versi yang cocok untuk memulai belajar tableau.
   - Tableau Server
     
     Jenis ini adalah versi yang memungkinkan untuk membagi hasil pengolahan atau *workbooks* kepada orang tertentu. Sangat berguna di dalam sebuah organisasi dimana setiap
-    informasi dibutuhkan oleh banyak orang sekaligus. Untuk membaginya pertama maka harus memiliki Tableau desktop terlebih dahulu barulah setelah itu di-upload ke server.
+    informasi dibutuhkan oleh banyak orang sekaligus. Untuk membaginya pertama maka harus memiliki Tableau desktop terlebih dahulu barulah setelah itu diupload ke server.
     Admin server dapat mengntrol segala kegiatan yang berlangsung di server.
   - Tableau Online
     
-    Versi ini hampir mirip seperti tableau server, tetapi dalam versi ini semua data yang di-upload akan disimpan di dalam cloud server. Tableau online tidak membatasi
+    Versi ini hampir mirip seperti tableau server, tetapi dalam versi ini semua data yang diupload akan disimpan di dalam cloud server. Tableau online tidak membatasi
     penyimpanannya, selain itu juga bisa langsung mengkoneksikannya dengan banyak database/big data platform seperti MySQL, Hive, Amazon Aurora, Spark SQL dan masih banyak
     lagi.
   - Tableau Reader
@@ -34,5 +35,79 @@ Tableau adalah sebuah aplikasi yang dirancang untuk melakukan Business Intellege
     Jenis ini adalah versi gratis yang memungkinkan untuk melihat hasil pengolahan data atau workbooks dari tableau desktop. Namun, tetap saja tidak bisa mengedit *workbooks*
     tersebut dan fiturnya sangat terbatas.
     
-  # Workspace & Navigation
+  # Tableau Workspace
+  
+  - Menu Bar
+  
+    Pada menu bar terdapat opsi menu seperti File, Data, Worksheet, Dashboard, Story, Analysis, Map, Format, Server, dan Windows. Opsi pada menu bar menyertakan fitur seperti
+    file saving, data source connection, file export, table calculation options, and design features for creating a worksheet, dashboard, and storyboard.
+  - Toolbar Icon
+
+    Toolbar icon yang berada di bawah menu bar dapat digunakan untuk mengedit *workbook* menggunakan berbagai fitur seperti undo, redo, save, new data source, slideshow, dan       sebagainya.
+  
+  Pada tableau juga terdapat *Component View* yang terdiri dari:
+  - Columns & Rows
+  
+    Panel ini digunakan untuk mendapatkan visualisasi data yang diinginkan dengan cara melakukan *drag dimensions* dan *measures* kemudian *drop* pada panel ini.
+  - Pages Shelf
+
+    Page shelf menunjukkan perubahan data dari waktu ke waktu pada *dimensions*.
+  - Filter Shelf
+
+    Penggunaannya yaitu dengan cara melakukan *drag* lalu *drop* ke panel filter untuk membatasi jumlah field yang ditunjukkan. Filter yang nampak pada dashboard memungkinkan 
+    pengguna mengontrol bagaiman melihat visualisasi.
+  - Marks Card
+
+    Marks card digunakan untuk mendesain visualisasi. Komponen data visualisasi seperti color, size, label, detail, tooltip yang digunakan dalam visualisasi dapat dimodifikasi 
+    dalam marks card.
+  - Worksheet
+
+    Worksheet adalah tempat di mana visualisasi sebenarnya dapat dilihat di workbook. Desain dan fungsionalitas visual dapat dilihat pada worksheet.
+   
+  Pada panel sebelah kiri terdapat pula *data pane* yang terdiri dari:
+  - Dimensions
+
+    Panel yang berisi data kategorik seperti teks dan tanggal.
+  - Measures
+
+    Panel yang berisi angka yang bisa dilakukan operasi-operasi statistik / aritmatika, seperti sum, average, max, min, dan sebagainya.
+  - Parameters
+  
+    Variabel yang dapat menggantikan nilai konstan yang ditentukan oleh peneliti. 
+  - Sets
+
+    Subset dari data yang didefinisikan.
+   
+  Berikut icon dan deskripsi yang terdapat pada data pane:
+  
+  Selain itu, juga terdapat *Analytics Pane* yang terdiri dari:
+  - Summarize
+
+    Tombol yang digunakan untuk menambahkan komponen yang telah ditentukan seperti garis konstan, rata-rata, median dengan kuartil, dan total.
+  - Model
+
+    Menu untuk menambahkan informasi pemodelan menurut keinginan peneliti seperti garis trend, peramalan, dan distribusi rata-rata.
+  - Custom
+
+    Menu untuk menambahkan custom lines, bands, dan boxplot.
+    
+  # Tableau Navigation
+  Navigasi pada tableau meliputi:
+  
+  - Data Source
+    
+    Penambahan data source baru dari modifikasi data source yang ada dapat dilakukan dengan menggunakan tab 'Data Source' yang ada di bagian pojok kiri bawah.
+  - Current Sheet
+
+    Current sheet dapat dilihat dengan nama sheet. Semua sheet, dashboard, dan story yang ada di workbook dapat dilihat di sini.
+  - New Sheet
+
+    Icon ew sheet digunakan untuk membuat sheet baru pada workbook tableau.
+  - New Dashboard
+
+    Icon new dashboard digunakan untuk membuat dashboard baru pada workbook tableau.
+  - New Story
+
+    Icon new story digunakan untuk membuat storyboard baru pada workbook tableau.
+    
   # Praktik Tableau
