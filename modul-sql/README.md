@@ -68,12 +68,44 @@
 
 <b><i>Database Management System</i></b> (DBMS) adalah suatu sistem atau perangkat lunak yang dirancang untuk mengelola suatu basis data dan menjalankan operasi terhadap data yang diminta banyak pengguna.
 
-Contoh DMBS:
+<b>Contoh DBMS</b>:
 - Oracle
 - MySQL
 - Microsoft Access
 - PostgreSQL
 - Microsoft SQL Server
+
+# 2. SQL
+
+### Install XAMPP
+
+Pada LBE kali ini, kita akan menggunakan DBMS MySQL dengan menggunakan aplikasi XAMPP yang bisa diunduh [di sini](https://www.apachefriends.org/download.html "di sini"). Cara instalasinya:
+
+- [Windows](https://www.youtube.com/watch?v=N43oVPkrTg8 "Windows")
+- [Mac](https://www.youtube.com/watch?v=EK_AUTzV7OI "Mac")
+- [Linux (Ubuntu)](https://www.youtube.com/watch?v=R5CUn5wGQGg "Linux (Ubuntu)")
+
+### Cara Run XAMPP
+
+- Buka XAMPP Control Panel
+- Klik Start pada modul Apache dan MySQL
+- Klik Admin pada modul MySQL
+
+<img src="https://user-images.githubusercontent.com/37539546/131892134-7cd1f759-5e92-4e84-a47c-6a0321a7457f.JPG" width="668" height="434.67">
+
+## Tentang SQL
+
+### Apa itu SQL?
+
+SQL (<i>Structured Query Language</i>) adalah sebuah bahasa yang digunakan untuk mengakses data dalam basis data relasional. SQL dapat digunakan untuk mendefinisikan struktur data, pengubahan data, memanipulasi/memperoleh data, pengaturan sekuritas, dan lain lain.
+
+## Data Definition Language (DDL)
+
+DDL digunakan untuk mendefinisikan, mengubah, serta menghapus database dan objek-objek yang diperlukan dalam database. Dalam implementasinya, DDL digunakan untuk membuat dan memanipulasi tabel maupun <i>view</i>.
+
+## Data Manipulation Language (DML)
+
+DML digunakan untuk memanipulasi data yang ada dalam suatu tabel.
 
 ## Referensi
 
@@ -83,3 +115,4 @@ Contoh DMBS:
 - https://www.dumetschool.com/blog/perbedaan-primary-key-foreign-key-dan-candidate-key
 - https://www.w3schools.com/sql
 - https://www.dewaweb.com/blog/sql-pengertian-fungsi-beserta-perintah-dasarnya/
+- https://id.wikipedia.org/wiki/SQL
