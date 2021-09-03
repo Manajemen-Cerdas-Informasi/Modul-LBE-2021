@@ -1,14 +1,24 @@
 # Modul 1 LBE MCI 2021: Database & SQL
 
-# 1. Database
+- [Database](#database)
+  - [Konsep](#konsep-database)
+  - [Istilah](#istilah-database)
+  - [Key](#key-database)
+  - [Database Management System (DBMS)](#dbms-database)
+- [SQL](#sql)
+  - [Tentang](#tentang-sql)
+  - [Data Definition Language (DDL)](#ddl-sql) 
+  - [Data Manipulation Language (DML)](#dml-sql)
 
-## Konsep Database
+# <a name="database"></a>1. Database
+
+## <a name="konsep-database"></a>Konsep Database
 
 ### Apa itu database?
 
 <b>Database</b> atau <b>basis data</b> adalah kumpulan data yang dikelola sedemikian rupa berdasarkan ketentuan tertentu yang saling berhubungan sehingga mudah dalam pengelolaannya. Melalui pengelolaan tersebut pengguna dapat memperoleh kemudahan dalam mencari informasi, menyimpan informasi, dan membuang informasi. Perangkat lunak yang digunakan untuk mengelola dan memanggil kueri (<i>query</i>) basis data tersebut disebut dengan sistem manajemen basis data (<i>Database Management System</i>/<b>DBMS</b>).
 
-### Istilah pada database
+### <a name="istilah-database"></a>Istilah pada database
 
 - <b>Entitas</b>
   
@@ -30,7 +40,7 @@
 
 <img src="https://user-images.githubusercontent.com/37539546/131708987-10383a7c-aa2e-47a1-9685-5b6f90ef8650.jpg" width="598.29" height="208.29">
 
-### Key pada database
+### <a name="key-database"></a>Key pada database
 
 <i>Key</i> adalah elemen <i>record</i> yang dipakai untuk menemukan <i>record</i> tersebut pada waktu akses. <i>Key</i> di dalam database berfungsi sebagai suatu cara untuk mengidentifikasi dan menghubungkan suatu tabel data dengan tabel yang lain. Terdapat beberapa jenis <i>key</i>, yaitu:
 
@@ -64,7 +74,7 @@
 
   <img src="https://user-images.githubusercontent.com/37539546/131868087-e603d5a7-ec56-40a1-b47d-271b7694bfed.jpg" width="398" height="166">
 
-### Database Management System (DBMS)
+### <a name="dbms-database"></a>Database Management System (DBMS)
 
 <b><i>Database Management System</i></b> (DBMS) adalah suatu sistem atau perangkat lunak yang dirancang untuk mengelola suatu basis data dan menjalankan operasi terhadap data yang diminta banyak pengguna.
 
@@ -75,7 +85,7 @@
 - PostgreSQL
 - Microsoft SQL Server
 
-# 2. SQL
+# <a name="sql"></a>2. SQL
 
 ### Install XAMPP
 
@@ -93,13 +103,13 @@ Pada LBE kali ini, kita akan menggunakan DBMS MySQL dengan menggunakan aplikasi 
 
 <img src="https://user-images.githubusercontent.com/37539546/131892134-7cd1f759-5e92-4e84-a47c-6a0321a7457f.JPG" width="668" height="434.67">
 
-## Tentang SQL
+## <a name="tentang-sql"></a>Tentang SQL
 
 ### Apa itu SQL?
 
 SQL (<i>Structured Query Language</i>) adalah sebuah bahasa yang digunakan untuk mengakses data dalam basis data relasional. SQL dapat digunakan untuk mendefinisikan struktur data, pengubahan data, memanipulasi/memperoleh data, pengaturan sekuritas, dan lain lain.
 
-## Data Definition Language (DDL)
+## <a name="ddl-sql"></a>Data Definition Language (DDL)
 
 DDL digunakan untuk mendefinisikan, mengubah, serta menghapus database dan objek-objek yang diperlukan dalam database. Dalam implementasinya, DDL digunakan untuk membuat dan memanipulasi tabel maupun <i>view</i>. Terdapat dua macam DDL, yaitu:
 
@@ -108,13 +118,13 @@ DDL digunakan untuk mendefinisikan, mengubah, serta menghapus database dan objek
 1. <b>CREATE DATABASE</b> untuk membuat database.
   
    ```MySQL
-   CREATE DATABASE mahasiswa;                 /* Membuat database 'mahasiswa' */
+   CREATE DATABASE mahasiswa;                                     /* Membuat database 'mahasiswa' */
    ```
      
 2. <b>DROP DATABASE</b> untuk menghapus database.
   
    ```MySQL
-   DROP DATABASE mahasiswa;                   /* Menghapus database 'mahasiswa' */
+   DROP DATABASE mahasiswa;                                       /* Menghapus database 'mahasiswa' */
    ```
    
 ### DDL untuk tabel
@@ -122,12 +132,12 @@ DDL digunakan untuk mendefinisikan, mengubah, serta menghapus database dan objek
 1. <b>CREATE TABLE</b> untuk membuat tabel baru pada database.
   
    ```MySQL
-   CREATE TABLE Mahasiswa (                   /* Membuat tabel 'mahasiswa' dengan 4 atribut */
-      NRP VARCHAR(16) NOT NULL,               /* NRP tidak NULL */
-      Nama VARCHAR(50) NOT NULL,              /* Nama tidak NULL */
+   CREATE TABLE Mahasiswa (                                       /* Membuat tabel 'mahasiswa' dengan 4 atribut */
+      NRP VARCHAR(16) NOT NULL,                                   /* NRP tidak NULL */
+      Nama VARCHAR(50) NOT NULL,                                  /* Nama tidak NULL */
       Usia INT,
       Semester INT,
-      PRIMARY KEY(NRP)                        /* NRP adalah primary key */
+      PRIMARY KEY(NRP)                                            /* NRP adalah primary key */
    );
    ```
      
@@ -137,38 +147,112 @@ DDL digunakan untuk mendefinisikan, mengubah, serta menghapus database dan objek
    
    ```MySQL
    ALTER TABLE Mahasiswa
-   ADD Tanggal_Lahir date;                    /* Menambah atribut baru 'Tanggal_Lahir' */
+   ADD Tanggal_Lahir date;                                        /* Menambah atribut baru 'Tanggal_Lahir' */
    ```
    
    <b>DROP COLUMN</b>
    
    ```MySQL
    ALTER TABLE Mahasiswa
-   DROP COLUMN Usia;                          /* Menghapus atribut 'Usia' */
+   DROP COLUMN Usia;                                              /* Menghapus atribut 'Usia' */
    ```
    
    <b>MODIFY COLUMN</b>
    
    ```MySQL
    ALTER TABLE Mahasiswa
-   MODIFY COLUMN NRP VARCHAR(14);             /* Mengubah atribut NRP menjadi bertipe data VARCHAR(14) */
+   MODIFY COLUMN NRP VARCHAR(14);                                 /* Mengubah tipe data atribut NRP menjadi VARCHAR(14) */
    ```
 
 3. <b>RENAME TABLE</b> untuk mengganti nama tabel pada database.
     
    ```MySQL
-   RENAME TABLE Mahasiswa TO Mhs;             /* Mengganti nama tabel 'Mahasiswa' menjadi 'Mhs' */
+   RENAME TABLE Mahasiswa TO Mhs;                                 /* Mengganti nama tabel 'Mahasiswa' menjadi 'Mhs' */
    ```
 
 4. <b>DROP TABLE</b> untuk menghapus tabel pada database.
     
    ```MySQL
-   DROP TABLE Mhs;                            /* Menghapus tabel 'Mhs' */
+   DROP TABLE Mhs;                                                /* Menghapus tabel 'Mhs' */
    ```
 
-## Data Manipulation Language (DML)
+## <a name="dml-sql"></a>Data Manipulation Language (DML)
 
-DML digunakan untuk memanipulasi data yang ada dalam suatu tabel.
+DML digunakan untuk memanipulasi data yang ada dalam suatu tabel. Beberapa kuerinya antara lain:
+
+1. <b>INSERT</b> untuk memasukkan <i>record</i> baru pada tabel.
+  
+   ```MySQL
+   INSERT INTO Mahasiswa(NRP, Nama, Usia, Semester)               /* Menambah record baru ke tabel */
+   VALUES('05111940000062', 'James', 20, 3);
+   ```
+
+2. <b>DELETE</b> untuk menghapus <i>record</i> pada tabel.
+  
+   ```MySQL
+   DELETE FROM Mahasiswa WHERE Nama = 'James';                    /* Menghapus record yang atribut Nama-nya 'James' */
+   ```
+
+3. <b>UPDATE</b> untuk memperbarui/mengubah <i>record</i> yang sudah ada pada tabel.
+  
+   ```MySQL
+   UPDATE Mahasiswa                                               /* Mengubah record yang atribut Semester-nya '4' menjadi '3' */
+   SET Semester = 4
+   WHERE Semester = 3;
+   ```
+
+4. <b>SELECT</b> untuk menampilkan/mengambil data dari database. Dapat menggunakan `DISTINCT` jika ingin menampilkan data tunggal (tidak dobel/kembar) ataupun `*` jika ingin menampilkan semua atribut dari suatu tabel.
+  
+   ```MySQL
+   SELECT NRP, Nama                                               /* Menampilkan data NRP dan Nama dari tabel 'Mahasiswa' */
+   FROM Mahasiswa;
+   ```
+   
+5. <b>WHERE</b> untuk filter suatu <i>record</i>.
+
+   ```MySQL
+   SELECT Nama                                                    /* Menampilkan data Nama dengan Usia '20' */
+   FROM Mahasiswa
+   WHERE Usia = 20;
+   ```
+   
+6. <b>BETWEEN</b> untuk operator rentang nilai.
+
+   ```MySQL
+   SELECT Nama                                                    /* Menampilkan data Nama dengan Usia '17-20' */
+   FROM Mahasiswa
+   WHERE Usia BETWEEN 17 AND 20;
+   ```
+
+6. <b>ORDER BY</b> untuk menampilkan <i>record</i> secara <i>ascending</i> (naik) maupun <i>descending</i> (turun).
+
+   ```MySQL
+   SELECT Nama                                                    /* Menampilkan data Nama dengan urutan ascending */
+   FROM Mahasiswa
+   ORDER BY Nama ASC;
+   ```
+
+7. <b>MIN</b> dan <b>MAX</b> untuk menampilkan nilai terkecil (minimum) dan nilai terbesar (maksimum).
+
+   ```MySQL
+   SELECT MIN(Usia)                                               /* Menampilkan Usia termuda */
+   FROM Mahasiswa;
+   ```
+
+8. <b>COUNT</b>, <b>AVG</b>, dan <b>SUM</b> sebagai fungsi agregasi. `COUNT()` untuk menghitung jumlah baris yang sesuai dengan kriteria. `AVG()` untuk menghitung rata-rata data kolom yang bertipe data numerik. `SUM()` untuk menghitung total data dalam kolom yang bertipe data numerik.
+
+   ```MySQL
+   SELECT AVG(Usia)                                               /* Menampilkan rata-rata Usia */
+   FROM Mahasiswa;
+   ```
+   
+9. <b>GROUP BY</b> untuk mengelompokkan baris yang memiliki nilai yang sama. Biasanya digunakan bersamaan dengan fungsi agregasi.
+   
+   ```MySQL
+   SELECT Usia, COUNT(Nama)                                       /* Menampilkan jumlah Nama berdasarkan Usia */
+   FROM Mahasiswa;
+   GROUP BY Usia;
+   ```
 
 ## Referensi
 
@@ -179,3 +263,7 @@ DML digunakan untuk memanipulasi data yang ada dalam suatu tabel.
 - https://www.w3schools.com/sql
 - https://www.dewaweb.com/blog/sql-pengertian-fungsi-beserta-perintah-dasarnya/
 - https://id.wikipedia.org/wiki/SQL
+
+- - - - 
+
+©Lab Manajemen Cerdas Informasi - 2021 
