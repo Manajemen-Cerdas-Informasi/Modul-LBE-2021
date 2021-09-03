@@ -101,7 +101,70 @@ SQL (<i>Structured Query Language</i>) adalah sebuah bahasa yang digunakan untuk
 
 ## Data Definition Language (DDL)
 
-DDL digunakan untuk mendefinisikan, mengubah, serta menghapus database dan objek-objek yang diperlukan dalam database. Dalam implementasinya, DDL digunakan untuk membuat dan memanipulasi tabel maupun <i>view</i>.
+DDL digunakan untuk mendefinisikan, mengubah, serta menghapus database dan objek-objek yang diperlukan dalam database. Dalam implementasinya, DDL digunakan untuk membuat dan memanipulasi tabel maupun <i>view</i>. Terdapat dua macam DDL, yaitu:
+
+### DDL untuk database
+
+1. <b>CREATE DATABASE</b> untuk membuat database.
+  
+   ```MySQL
+   CREATE DATABASE mahasiswa;                 /* Membuat database 'mahasiswa' */
+   ```
+     
+2. <b>DROP DATABASE</b> untuk menghapus database.
+  
+   ```MySQL
+   DROP DATABASE mahasiswa;                   /* Menghapus database 'mahasiswa' */
+   ```
+   
+### DDL untuk tabel
+
+1. <b>CREATE TABLE</b> untuk membuat tabel baru pada database.
+  
+   ```MySQL
+   CREATE TABLE Mahasiswa (                   /* Membuat tabel 'mahasiswa' dengan 4 atribut */
+      NRP VARCHAR(16) NOT NULL,               /* NRP tidak NULL */
+      Nama VARCHAR(50) NOT NULL,              /* Nama tidak NULL */
+      Usia INT,
+      Semester INT,
+      PRIMARY KEY(NRP)                        /* NRP adalah primary key */
+   );
+   ```
+     
+2. <b>ALTER TABLE</b> untuk memodifikasi atribut pada tabel yang sudah ada (menambah, mengubah, menghapus).
+   
+   <b>ADD</b>
+   
+   ```MySQL
+   ALTER TABLE Mahasiswa
+   ADD Tanggal_Lahir date;                    /* Menambah atribut baru 'Tanggal_Lahir' */
+   ```
+   
+   <b>DROP COLUMN</b>
+   
+   ```MySQL
+   ALTER TABLE Mahasiswa
+   DROP COLUMN Usia;                          /* Menghapus atribut 'Usia' */
+   ```
+   
+   <b>MODIFY COLUMN</b>
+   
+   ```MySQL
+   ALTER TABLE Mahasiswa
+   MODIFY COLUMN NRP VARCHAR(14);             /* Mengubah atribut NRP menjadi bertipe data VARCHAR(14) */
+   ```
+
+3. <b>RENAME TABLE</b> untuk mengganti nama tabel pada database.
+    
+   ```MySQL
+   RENAME TABLE Mahasiswa TO Mhs;             /* Mengganti nama tabel 'Mahasiswa' menjadi 'Mhs' */
+   ```
+
+4. <b>DROP TABLE</b> untuk menghapus tabel pada database.
+    
+   ```MySQL
+   DROP TABLE Mhs;                            /* Menghapus tabel 'Mhs' */
+   ```
 
 ## Data Manipulation Language (DML)
 
