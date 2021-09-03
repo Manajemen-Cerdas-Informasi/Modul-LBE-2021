@@ -6,9 +6,15 @@
   - [Key](#key-database)
   - [Database Management System (DBMS)](#dbms-database)
 - [SQL](#sql)
+  - [Install XAMPP](#installxampp-sql)
+  - [Run XAMPP](#runxampp-sql)
   - [Tentang](#tentang-sql)
-  - [Data Definition Language (DDL)](#ddl-sql) 
+  - [Data Definition Language (DDL)](#ddl-sql)
+    - [DDL Database](#ddl-database)
+    - [DDL Tabel](#ddl-tabel)
   - [Data Manipulation Language (DML)](#dml-sql)
+  - [Latihan](#latihan-sql)
+- [Referensi](#referensi)
 
 # <a name="database"></a>1. Database
 
@@ -87,7 +93,7 @@
 
 # <a name="sql"></a>2. SQL
 
-### Install XAMPP
+### <a name="installxampp-sql"></a>Install XAMPP
 
 Pada LBE kali ini, kita akan menggunakan DBMS MySQL dengan menggunakan aplikasi XAMPP yang bisa diunduh [di sini](https://www.apachefriends.org/download.html "di sini"). Cara instalasinya:
 
@@ -95,7 +101,7 @@ Pada LBE kali ini, kita akan menggunakan DBMS MySQL dengan menggunakan aplikasi 
 - [Mac](https://www.youtube.com/watch?v=EK_AUTzV7OI "Mac")
 - [Linux (Ubuntu)](https://www.youtube.com/watch?v=R5CUn5wGQGg "Linux (Ubuntu)")
 
-### Cara Run XAMPP
+### <a name="runxampp-sql"></a>Cara Run XAMPP
 
 - Buka XAMPP Control Panel
 - Klik Start pada modul Apache dan MySQL
@@ -113,7 +119,7 @@ SQL (<i>Structured Query Language</i>) adalah sebuah bahasa yang digunakan untuk
 
 DDL digunakan untuk mendefinisikan, mengubah, serta menghapus database dan objek-objek yang diperlukan dalam database. Dalam implementasinya, DDL digunakan untuk membuat dan memanipulasi tabel maupun <i>view</i>. Terdapat dua macam DDL, yaitu:
 
-### DDL untuk database
+### <a name="ddl-database"></a>DDL untuk database
 
 1. <b>CREATE DATABASE</b> untuk membuat database.
   
@@ -127,7 +133,7 @@ DDL digunakan untuk mendefinisikan, mengubah, serta menghapus database dan objek
    DROP DATABASE mahasiswa;                                       /* Menghapus database 'mahasiswa' */
    ```
    
-### DDL untuk tabel
+### <a name="ddl-tabel"></a>DDL untuk tabel
 
 1. <b>CREATE TABLE</b> untuk membuat tabel baru pada database.
   
@@ -254,7 +260,17 @@ DML digunakan untuk memanipulasi data yang ada dalam suatu tabel. Beberapa kueri
    GROUP BY Usia;
    ```
 
-## Referensi
+## <a name="latihan-sql"></a>Latihan
+
+Sebelum mengerjakan, kalian dapat mengunduh dataset <b>Northwind</b> [di sini](http://downloads.alphasoftware.com/a5v12Download/northwindmysql.zip "di sini"). Setelah itu di-<i>import</i> ke MySQL.
+
+1. Tampilkan daftar nama <i>product</i> dan <i>unit price</i>-nya dari yang paling mahal!
+ 
+2. Hitunglah jumlah <i>product</i> yang saat ini dihentikan produksinya (<i>discontinued</i>)!
+
+3. Tampilkan daftar nama lengkap <i>employee</i> beserta tanggal rekrutnya yang mempunyai jabatan "Sales Representative"!
+
+## <a name="referensi"></a>Referensi
 
 - https://www.dicoding.com/blog/apa-itu-database/
 - https://informatika.poltektegal.ac.id/?p=bidang-keilmuan&s=database
@@ -263,7 +279,3 @@ DML digunakan untuk memanipulasi data yang ada dalam suatu tabel. Beberapa kueri
 - https://www.w3schools.com/sql
 - https://www.dewaweb.com/blog/sql-pengertian-fungsi-beserta-perintah-dasarnya/
 - https://id.wikipedia.org/wiki/SQL
-
-- - - - 
-
-©Lab Manajemen Cerdas Informasi - 2021 
