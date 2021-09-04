@@ -14,6 +14,7 @@
     - [DDL Tabel](#ddl-tabel)
   - [Data Manipulation Language (DML)](#dml-sql)
   - [Latihan](#latihan-sql)
+  - [Platform untuk Latihan](#platform-sql)
 - [Referensi](#referensi)
 
 # <a name="database"></a>1. Database
@@ -270,6 +271,10 @@ Sebelum mengerjakan, kalian dapat mengunduh dataset <b>Northwind</b> [di sini](h
 
 3. Tampilkan daftar nama lengkap <i>employee</i> beserta tanggal rekrutnya yang mempunyai jabatan "Sales Representative"!
 
+## <a name="platform-sql"></a>Platform untuk Latihan
+1. https://sqlzoo.net/wiki/SQL_Tutorial
+2. https://www.hackerrank.com/domains/sql
+
 ## <a name="referensi"></a>Referensi
 
 - https://www.dicoding.com/blog/apa-itu-database/
@@ -279,3 +284,4 @@ Sebelum mengerjakan, kalian dapat mengunduh dataset <b>Northwind</b> [di sini](h
 - https://www.w3schools.com/sql
 - https://www.dewaweb.com/blog/sql-pengertian-fungsi-beserta-perintah-dasarnya/
 - https://id.wikipedia.org/wiki/SQL
+- https://teachcomputerscience.com/database-data-types/
