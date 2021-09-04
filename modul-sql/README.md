@@ -285,3 +285,5 @@ Sebelum mengerjakan, kalian dapat mengunduh dataset <b>Northwind</b> [di sini](h
 - https://www.dewaweb.com/blog/sql-pengertian-fungsi-beserta-perintah-dasarnya/
 - https://id.wikipedia.org/wiki/SQL
 - https://teachcomputerscience.com/database-data-types/
+- https://github.com/minons1/PelatihanSoftwareHouseHMTCITS/wiki
+- https://github.com/irsyadhani/LBE_MCI-Modul_SQL
