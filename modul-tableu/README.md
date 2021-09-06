@@ -36,6 +36,8 @@ Tableau adalah sebuah aplikasi yang dirancang untuk melakukan *Business Intelleg
     
     Jenis ini adalah versi gratis yang memungkinkan untuk melihat hasil pengolahan data atau workbooks dari tableau desktop. Namun, tetap saja tidak bisa mengedit *workbooks*
     tersebut dan fiturnya sangat terbatas.
+  
+  <img src="https://github.com/Manajemen-Cerdas-Informasi/Modul-LBE-2021/blob/main/modul-tableu/img/tableau_product_suite.jpg" width=""></img><br>
     
   # <a name="tableau-workspace"></a>Tableau Workspace
   Berikut tampilan workspace pada tableau:
@@ -120,6 +122,23 @@ Tableau adalah sebuah aplikasi yang dirancang untuk melakukan *Business Intelleg
     Icon new story digunakan untuk membuat storyboard baru pada workbook tableau.
     
   # <a name="praktik-tableau"></a>Praktik Tableau
+  1. Pastikan Anda telah mendownload dataset yang terdapat di folder dataset.
+  2. Buka aplikasi Tableau, Anda dapat menggunakan Tableau Desktop (Free Trial atau Lisensi Mahasiswa) atau menggunakan Tableau Online (Free Trial). Tampilan workspace 
+     pada tableau desktop akan seperti berikut:
+     
+     <img src="https://github.com/Manajemen-Cerdas-Informasi/Modul-LBE-2021/blob/main/modul-tableu/img/image_1.png" width=""></img><br>
+     
+  3. Klik Data Source yang terletak pada pojok kiri bawah, maka tampilan akan menjadi seperti berikut:
+  
+     <img src="https://github.com/Manajemen-Cerdas-Informasi/Modul-LBE-2021/blob/main/modul-tableu/img/image_2.png" width=""></img><br>
+     
+  4. Klik More... kemudian pilih file dataset yang sudah di-download sehingga tampilannya akan seperti ini:
+
+     <img src="https://github.com/Manajemen-Cerdas-Informasi/Modul-LBE-2021/blob/main/modul-tableu/img/image_3.png" width=""></img><br>
+     
+  5. Selanjutnya klik Sheet 1 untuk menampilkan *Worksheet* dan mulailah memvisualisasikan data tersebut. Tampilannya seperti berikut ini:
+     
+     <img src="https://github.com/Manajemen-Cerdas-Informasi/Modul-LBE-2021/blob/main/modul-tableu/img/image_4.png" width=""></img><br>
   
   Sumber Referensi:
   - https://anaktik.com/tableau/
