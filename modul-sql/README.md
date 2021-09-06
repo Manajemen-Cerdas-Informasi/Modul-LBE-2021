@@ -215,6 +215,16 @@ DML digunakan untuk memanipulasi data yang ada dalam suatu tabel. Beberapa kueri
    FROM Mahasiswa;
    ```
    
+   ```MySQL
+   SELECT DISTINCT(Usia)                                          /* Menampilkan data Usia dari tabel 'Mahasiswa' secara tunggal */
+   FROM Mahasiswa;
+   ```
+   
+   ```MySQL
+   SELECT *                                                       /* Menampilkan semua kolom dari tabel 'Mahasiswa' */
+   FROM Mahasiswa;
+   ```
+   
 5. <b>WHERE</b> untuk filter suatu <i>record</i>.
 
    ```MySQL
@@ -238,11 +248,22 @@ DML digunakan untuk memanipulasi data yang ada dalam suatu tabel. Beberapa kueri
    FROM Mahasiswa
    ORDER BY Nama ASC;
    ```
+   
+   ```MySQL
+   SELECT Semester                                                /* Menampilkan data Semester dengan urutan descending */
+   FROM Mahasiswa
+   ORDER BY Nama DESC;
+   ```
 
 7. <b>MIN</b> dan <b>MAX</b> untuk menampilkan nilai terkecil (minimum) dan nilai terbesar (maksimum).
 
    ```MySQL
    SELECT MIN(Usia)                                               /* Menampilkan Usia termuda */
+   FROM Mahasiswa;
+   ```
+   
+   ```MySQL
+   SELECT MAX(Semester)                                           /* Menampilkan Semester paling akhir */
    FROM Mahasiswa;
    ```
 
@@ -251,6 +272,16 @@ DML digunakan untuk memanipulasi data yang ada dalam suatu tabel. Beberapa kueri
    ```MySQL
    SELECT AVG(Usia)                                               /* Menampilkan rata-rata Usia */
    FROM Mahasiswa;
+   ```
+   
+   ```MySQL
+   SELECT COUNT(Nama)                                             /* Menampilkan jumlah baris atribut Nama */
+   FROM Mahasiswa;
+   ```
+   
+   ```MySQL
+   SELECT SUM(Harga)                                              /* Menampilkan jumlah total data dari atribut Harga */
+   FROM Penjualan;
    ```
    
 9. <b>GROUP BY</b> untuk mengelompokkan baris yang memiliki nilai yang sama. Biasanya digunakan bersamaan dengan fungsi agregasi.
