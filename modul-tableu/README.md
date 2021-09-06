@@ -1,4 +1,5 @@
-# Modul Tableau LBE MCI 2021
+# Modul 2 LBE MCI 2021: Tableau
+
   - [Tentang Tableau](#tentang-tableau)
   - [Tableau Workspace](#tableau-workspace)
   - [Tableau Navigation](#tableau-navigation)
