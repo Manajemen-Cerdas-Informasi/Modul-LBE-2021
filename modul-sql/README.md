@@ -98,6 +98,14 @@ Relational Database Management System yang biasa disingkat dengan RDMBS adalah s
 
 Basis data relasional sendiri merupakan suatu jenis database dimana data – data umumnya disimpan dalam bentuk yang terstruktur berupa tabel (baris dan kolom) dan setiap tabel/ data yang terdapat dalam database memiliki relasi (relational) satu sama lain. Seperti terlihat pada gambar berikut
 
+<img src="https://github.com/Manajemen-Cerdas-Informasi/Modul-LBE-2021/blob/main/modul-sql/img/RDBMS.jpg" width="500">
+
+Basis data relasional sangat popular dan banyak digunakan oleh perusahaan – perusahaan karena jenis database ini mudah dikelola terlebih jika memiliki banyak data atau informasi yang perlu disimpan, scalable dan flexibel.
+
+Basis data rasional cukup mudah dikelola. Setiap tabel/data dapat diupdate atau dimodifikasi tanpa mengganggu tabel/data yang lain.
+* Flexible: jika perlu memperbarui data, hanya perlu melakukannya sekali saja - jadi tidak perlu lagi mengubah banyak file satu per satu. 
+* Cukup mudah untuk di-extend. Misalnya saat data sudah semakin banyak, dapat dengan mudah memperbesar kapasitas dari database yang dimiliki.
+
 # <a name="sql"></a>2. SQL
 
 ### <a name="installxampp-sql"></a>Install XAMPP
