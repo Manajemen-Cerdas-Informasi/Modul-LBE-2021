@@ -5,6 +5,7 @@
   - [Istilah](#istilah-database)
   - [Key](#key-database)
   - [Database Management System (DBMS)](#dbms-database)
+  - [Relational Database Management System (DBMS)](#rdbms-database)
 - [SQL](#sql)
   - [Install XAMPP](#installxampp-sql)
   - [Run XAMPP](#runxampp-sql)
@@ -92,6 +93,11 @@
 - PostgreSQL
 - Microsoft SQL Server
 
+### <a name="rdbms-database"></a>**Relational Database Management System (RDBMS)**
+Relational Database Management System yang biasa disingkat dengan RDMBS adalah suatu program yang memungkinkan untuk Membuat, Memperbarui, dan Mengelola suatu basis data relasional (Relational Database). Umumnya RDMBS ini menggunakan SQL untuk mengakses database. <br>
+
+Basis data relasional sendiri merupakan suatu jenis database dimana data – data umumnya disimpan dalam bentuk yang terstruktur berupa tabel (baris dan kolom) dan setiap tabel/ data yang terdapat dalam database memiliki relasi (relational) satu sama lain. Seperti terlihat pada gambar berikut
+
 # <a name="sql"></a>2. SQL
 
 ### <a name="installxampp-sql"></a>Install XAMPP
@@ -114,11 +120,11 @@ Pada LBE kali ini, kita akan menggunakan DBMS MySQL dengan menggunakan aplikasi 
 
 ### Apa itu SQL?
 
-SQL (<i>Structured Query Language</i>) adalah sebuah bahasa yang digunakan untuk mengakses data dalam basis data relasional. SQL dapat digunakan untuk mendefinisikan struktur data, pengubahan data, memanipulasi/memperoleh data, pengaturan sekuritas, dan lain lain.
+SQL (<i>Structured Query Language</i>) adalah sebuah bahasa yang digunakan untuk mengakses data dalam basis data relasional. SQL dapat digunakan untuk mendefinisikan struktur data, pengubahan data, memanipulasi/memperoleh data, pengaturan sekuritas, dan lain lain. SQL dilafalkan dengan membaca tiap karakternya **S Q L** (Es Qi El) atau **Siquel**.
 
 ## <a name="ddl-sql"></a>Data Definition Language (DDL)
 
-DDL digunakan untuk mendefinisikan, mengubah, serta menghapus database dan objek-objek yang diperlukan dalam database. Dalam implementasinya, DDL digunakan untuk membuat dan memanipulasi tabel maupun <i>view</i>. Terdapat dua macam DDL, yaitu:
+DDL digunakan untuk mendefinisikan, mengubah, serta menghapus database dan objek-objek yang diperlukan dalam database atau lebih tepatnya **memanipulasi struktur database**. Dalam implementasinya, DDL digunakan untuk membuat dan memanipulasi tabel maupun <i>view</i>. Terdapat dua macam DDL, yaitu:
 
 ### <a name="ddl-database"></a>DDL untuk database
 
@@ -185,7 +191,7 @@ DDL digunakan untuk mendefinisikan, mengubah, serta menghapus database dan objek
 
 ## <a name="dml-sql"></a>Data Manipulation Language (DML)
 
-DML digunakan untuk memanipulasi data yang ada dalam suatu tabel. Beberapa kuerinya antara lain:
+DML digunakan untuk memanipulasi data yang ada dalam suatu tabel. Berisi berbagai perintah yang dapat digunakan untuk menyisipkan data (INSERT), mengambil data atau query (SELECT), mengubah data (UPDATE) dan menghapus data (DELETE). Beberapa kuerinya antara lain:
 
 1. <b>INSERT</b> untuk memasukkan <i>record</i> baru pada tabel.
   
